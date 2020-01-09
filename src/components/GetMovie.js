@@ -4,7 +4,7 @@ let getMovie = async (title, year) => {
   let data;
   if (title && year) {
     response = await fetch(
-      `http://www.omdbapi.com/?apiKey=${apiKey}&t=${title}&y=${year}`
+      `https://www.omdbapi.com/?apiKey=${apiKey}&t=${title}&y=${year}`
     );
 
     data = await response.json();
